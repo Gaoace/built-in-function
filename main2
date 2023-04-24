@@ -1,0 +1,18 @@
+void func(void)
+{
+    int *p;
+    p = __builtin_frame_address(0);
+    printf("func frame:%p\n",p);
+    p = __builtin_frame_address(1);
+    printf("main frame:%p\n",p);
+}
+
+int main(void)
+{
+    int *p;
+    p = __builtin_frame_address(0);
+    printf("main frame:%p\n",p);
+    printf("\n");
+    func();
+    return 0;
+}
