@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+int main(void)
+{
+    int a = 0;
+
+    scanf("%d", &a);
+
+    if (0 == a)
+    {
+        printf("%d", 1);
+        printf("%d", 2);
+        printf("\n");
+    }
+    else
+    {
+
+        printf("%d", 5);
+        printf("%d", 6);
+        printf("\n");
+
+    }
+
+    return 0;
+}
